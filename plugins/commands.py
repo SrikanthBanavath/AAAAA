@@ -602,16 +602,16 @@ async def start(client, message):
             )
             return
     if STREAM_MODE == True:
-                button = [[
-                    InlineKeyboardButton("Updates Channel", url="t.me/CinemasMawa_OTT")
-                ],[
-                    InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
-                ]]
-            else:
-                button = [[
-                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                ]]
+        button = [[
+            InlineKeyboardButton("Updates Channel", url="t.me/CinemasMawa_OTT")
+        ],[
+            InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
+        ]]
+    else:
+        button = [[
+            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
+            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+        ]]
     msg = await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
