@@ -24,10 +24,10 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "6565324108:AAEyVFVDVnxETmhduEHuOQz-4JDiAGg
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
-PICS = (environ.get('PICS', 'https://graph.org/file/01ddfcb1e8203879a63d7.jpg https://graph.org/file/d69995d9846fd4ad632b8.jpg https://graph.org/file/a125497b6b85a1d774394.jpg https://graph.org/file/43d26c54d37f4afb830f7.jpg https://graph.org/file/60c1adffc7cc2015f771c.jpg https://graph.org/file/d7b520240b00b7f083a24.jpg https://graph.org/file/0f336b0402db3f2a20037.jpg https://graph.org/file/39cc4e15cad4519d8e932.jpg https://graph.org/file/d59a1108b1ed1c6c6c144.jpg https://te.legra.ph/file/3a4a79f8d5955e64cbb8e.jpg https://graph.org/file/d69995d9846fd4ad632b8.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://telegra.ph/file/4ffabd203b34bdb50a0d0.jpg https://telegra.ph/file/4053032016169765e6889.jpg https://telegra.ph/file/d65f55c8b78009cfb3fdf.jpg https://telegra.ph/file/2213162ec6a884935adac.jpg https://telegra.ph/file/e72cf2bf620ce1befdf6e.jpg https://telegra.ph/file/7e05b263c15e1454fb331.jpg https://telegra.ph/file/e6e28ececa8435777f0ca.jpg https://telegra.ph/file/3e3f29c6dd81aec8c0032.jpg https://telegra.ph/file/0e88cdf9fad86512512e7.jpg https://telegra.ph/file/7dbacb5a4a83f8e97aec6.jpg https://telegra.ph/file/3fff40a58611c4dc7b493.jpg https://telegra.ph/file/64a77b4d4006b8bbe6791.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/b69af2db776e4e85d21ec.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/CinemasMawa")
-SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
+SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/41bdc9963956a0ea64607.jpg")
 
 # Admins, Channels & Users
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001598783514'))
@@ -92,7 +92,7 @@ SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
-NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
+NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 # Token Verification Info :
