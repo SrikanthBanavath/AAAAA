@@ -5,7 +5,7 @@
 
 class script(object):
     START_TXT = """<b><blockquote>Hᴇʟʟᴏ {}, 
-    Mʏ Nᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
+Mʏ Nᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
     
 I Cᴀɴ Sʜᴀʀᴇ Mᴏᴠɪᴇs ᴀɴᴅ Sᴇʀɪᴇs.
     
