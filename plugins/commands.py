@@ -46,7 +46,7 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('➕️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
+                InlineKeyboardButton("Sᴇᴀʀᴄʜ 🔎", switch_inline_query_current_chat=''),
                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs 🔈', url="https://t.me/CinemasMawa_OTT")
             ],[
                 InlineKeyboardButton('Hᴇʟᴩ 🕸️', callback_data='help'),
@@ -58,7 +58,7 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('📲 Sʜᴀʀᴇ Wɪᴛʜ Fʀɪᴇɴᴅs', url=f'https://t.me/share/url?url=**For%20Movies/Series%20%F0%9F%8E%AC%20%E2%9C%85**%0A%0A%40Professor_Search_Bot%20%F0%9F%98%8E')
             ],[
-                InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
+                InlineKeyboardButton("Sᴇᴀʀᴄʜ 🔎", switch_inline_query_current_chat=''),
                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs 🔈', url="https://t.me/CinemasMawa_OTT")
             ],[
                 InlineKeyboardButton('Hᴇʟᴩ 🕸️', callback_data='help'),
@@ -124,7 +124,7 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('➕️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
+                InlineKeyboardButton("Sᴇᴀʀᴄʜ 🔎", switch_inline_query_current_chat=''),
                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs 🔈', url="https://t.me/CinemasMawa_OTT")
             ],[
                 InlineKeyboardButton('Hᴇʟᴩ 🕸️', callback_data='help'),
@@ -136,7 +136,7 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('📲 Sʜᴀʀᴇ Wɪᴛʜ Fʀɪᴇɴᴅs', url=f'https://t.me/share/url?url=**For%20Movies/Series%20%F0%9F%8E%AC%20%E2%9C%85**%0A%0A%40Professor_Search_Bot%20%F0%9F%98%8E')
             ],[
-                InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
+                InlineKeyboardButton("Sᴇᴀʀᴄʜ 🔎", switch_inline_query_current_chat=''),
                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs 🔈', url="https://t.me/CinemasMawa_OTT")
             ],[
                 InlineKeyboardButton('Hᴇʟᴩ 🕸️', callback_data='help'),
@@ -175,7 +175,7 @@ async def start(client, message):
                 buttons = [[
                     InlineKeyboardButton('➕️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
+                    InlineKeyboardButton("Sᴇᴀʀᴄʜ 🔎", switch_inline_query_current_chat=''),
                     InlineKeyboardButton('Uᴘᴅᴀᴛᴇs 🔈', url="https://t.me/CinemasMawa_OTT")
                 ],[
                     InlineKeyboardButton('Hᴇʟᴩ 🕸️', callback_data='help'),
@@ -187,7 +187,7 @@ async def start(client, message):
                 buttons = [[
                     InlineKeyboardButton('📲 Sʜᴀʀᴇ Wɪᴛʜ Fʀɪᴇɴᴅs', url=f'https://t.me/share/url?url=**For%20Movies/Series%20%F0%9F%8E%AC%20%E2%9C%85**%0A%0A%40Professor_Search_Bot%20%F0%9F%98%8E')
                 ],[
-                    InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
+                    InlineKeyboardButton("Sᴇᴀʀᴄʜ 🔎", switch_inline_query_current_chat=''),
                     InlineKeyboardButton('Uᴘᴅᴀᴛᴇs 🔈', url="https://t.me/CinemasMawa_OTT")
                 ],[
                     InlineKeyboardButton('Hᴇʟᴩ 🕸️', callback_data='help'),
