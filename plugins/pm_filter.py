@@ -1908,7 +1908,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             stream = f"{URL}watch/{str(log_msg.id)}/?hash={get_hash(log_msg)}"
             download = f"{URL}{str(log_msg.id)}/?hash={get_hash(log_msg)}"
 
-            xo = await query.message.reply_text(f'Please Wait...')
+            xo = await query.message.reply_text(f'<code>Please Wait...</code>')
             await asyncio.sleep(1)
             await xo.delete()
 
