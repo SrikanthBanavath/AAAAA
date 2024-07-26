@@ -50,29 +50,25 @@ async def auto_approve(client, message: ChatJoinRequest):
             else:
                 if PREMIUM_AND_REFERAL_MODE == True:
                     buttons = [[
-                        InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                        InlineKeyboardButton('➕️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                     ],[
                         InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                        InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs 🔈', url="https://t.me/CinemasMawa_OTT")
                     ],[
-                        InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                        InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                        InlineKeyboardButton('Hᴇʟᴩ 🕸️', callback_data='help'),
+                        InlineKeyboardButton('Aʙᴏᴜᴛ ✨', callback_data='about')
                     ],[
-                        InlineKeyboardButton('🔻 ɢᴇᴛ ғʀᴇᴇ/ᴘᴀɪᴅ sᴜʙsᴄʀɪᴘᴛɪᴏɴ 🔻', callback_data='subscription')
-                    ],[
-                        InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                        InlineKeyboardButton('🔻Gᴇᴛ Fʀᴇᴇ/Pᴀɪᴅ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ🔻', callback_data='subscription')
                     ]]
                 else:
                     buttons = [[
-                        InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                        InlineKeyboardButton('📲 Sʜᴀʀᴇ Wɪᴛʜ Fʀɪᴇɴᴅs', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                     ],[
-                        InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                        InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                        InlineKeyboardButton('Sᴇᴀʀᴄʜ 🔎', switch_inline_query_current_chat=''),
+                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs 🔈', url="https://t.me/CinemasMawa_OTT")
                     ],[
-                        InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                        InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
-                    ],[
-                        InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                        InlineKeyboardButton('Hᴇʟᴩ 🕸️', callback_data='help'),
+                        InlineKeyboardButton('Aʙᴏᴜᴛ ✨', callback_data='about')
                     ]]
                 reply_markup = InlineKeyboardMarkup(buttons)
                 m=await client.send_sticker(chat_id = message.from_user.id, sticker = "CAACAgUAAxkBAAEKVaxlCWGs1Ri6ti45xliLiUeweCnu4AACBAADwSQxMYnlHW4Ls8gQMAQ") 
@@ -182,14 +178,14 @@ async def auto_approve(client, message: ChatJoinRequest):
                         return
                 if STREAM_MODE == True:
                     button = [[
-                        InlineKeyboardButton("Updates Channel", url="t.me/CinemasMawa_OTT")
+                        InlineKeyboardButton("Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url="t.me/CinemasMawa_OTT")
                     ],[
-                        InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
+                        InlineKeyboardButton('🖥Wᴀᴛᴄʜ Oɴʟɪɴᴇ / Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ⚡️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
                     ]]
                 else:
                     button = [[
-                        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        InlineKeyboardButton('Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ', url=f'https://t.me/Banoth_Srikanth'),
+                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url="t.me/CinemasMawa_OTT")
                     ]]
                 msg = await client.send_cached_media(
                     chat_id=message.from_user.id,
@@ -246,14 +242,14 @@ async def auto_approve(client, message: ChatJoinRequest):
                         return
                 if STREAM_MODE == True:
                     button = [[
-                        InlineKeyboardButton("Updates Channel", url="t.me/CinemasMawa_OTT")
+                        InlineKeyboardButton("Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url="t.me/CinemasMawa_OTT")
                     ],[
-                        InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
+                        InlineKeyboardButton('🖥Wᴀᴛᴄʜ Oɴʟɪɴᴇ / Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ⚡️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
                     ]]
                 else:
                     button = [[
-                        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        InlineKeyboardButton('Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ', url=f'https://t.me/Banoth_Srikanth'),
+                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url="t.me/CinemasMawa_OTT")
                     ]]
                 msg = await client.send_cached_media(
                     chat_id=message.from_user.id,
@@ -314,14 +310,14 @@ async def auto_approve(client, message: ChatJoinRequest):
                 return
         if STREAM_MODE == True:
             button = [[
-                InlineKeyboardButton("Updates Channel", url="t.me/CinemasMawa_OTT")
+                InlineKeyboardButton("Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url="t.me/CinemasMawa_OTT")
             ],[
-                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
+                InlineKeyboardButton('🖥Wᴀᴛᴄʜ Oɴʟɪɴᴇ / Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ⚡️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
             ]]
         else:
             button = [[
-                InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                InlineKeyboardButton('Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ', url=f'https://t.me/Banoth_Srikanth'),
+                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url="t.me/CinemasMawa_OTT")
             ]]
         msg = await client.send_cached_media(
             chat_id=message.from_user.id,
