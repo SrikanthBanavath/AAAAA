@@ -20,17 +20,17 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'CinemasMawa')
 API_ID = int(environ.get('API_ID', '26181458'))
 API_HASH = environ.get('API_HASH', '09c734fa0c97721650b5dc0cdbd679d7')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6565324108:AAEyVFVDVnxETmhduEHuOQz-4JDiAGgyxXI")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6391546225:AAGweWSpVOZeQN8qDolQu3PFSvUKBOFnCJI")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/4ffabd203b34bdb50a0d0.jpg https://telegra.ph/file/4053032016169765e6889.jpg https://telegra.ph/file/d65f55c8b78009cfb3fdf.jpg https://telegra.ph/file/2213162ec6a884935adac.jpg https://telegra.ph/file/e72cf2bf620ce1befdf6e.jpg https://telegra.ph/file/7e05b263c15e1454fb331.jpg https://telegra.ph/file/e6e28ececa8435777f0ca.jpg https://telegra.ph/file/3e3f29c6dd81aec8c0032.jpg https://telegra.ph/file/0e88cdf9fad86512512e7.jpg https://telegra.ph/file/7dbacb5a4a83f8e97aec6.jpg https://telegra.ph/file/3fff40a58611c4dc7b493.jpg https://telegra.ph/file/64a77b4d4006b8bbe6791.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://telegra.ph/file/3abfb91a687fc3ae2f35f.jpg https://telegra.ph/file/7da29c1cb7ecfcbfba5d7.jpg https://telegra.ph/file/3b1d9c41e9f2e29afebf8.jpg https://telegra.ph/file/8569350ad379aa43d38f0.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/b69af2db776e4e85d21ec.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/CinemasMawa")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/41bdc9963956a0ea64607.jpg")
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001598783514'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001910808077'))
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6077206903').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001637399766 -1001817901075 -1002048552177').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
@@ -38,11 +38,11 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # auth_channel means force subscribe channel.
 # if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
-REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', True)) # Set True Or False
-TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
-auth_channel = environ.get('AUTH_CHANNEL', '-1002126672187') # give your force subscribe channel id here else leave it blank
+REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', False)) # Set True Or False
+TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', True)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
+auth_channel = environ.get('AUTH_CHANNEL', '-1001907128192') # give your force subscribe channel id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001980062268')
+reqst_channel = environ.get('REQST_CHANNEL_ID', '--1001910808077')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001867926036')
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
@@ -51,7 +51,7 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://rndjsongs:rndjsongs@cluster0.id7dpmm.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://cinemasmawa:cinemasmawa@cluster0.omxcbvk.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
@@ -133,7 +133,7 @@ YEARS = ["1900", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998",
 
 
 # Online Stream and Download
-STREAM_MODE = bool(environ.get('STREAM_MODE', False)) # Set True or False
+STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or False
 
 # If Stream Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 MULTI_CLIENT = False
