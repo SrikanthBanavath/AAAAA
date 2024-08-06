@@ -237,9 +237,9 @@ Nᴀᴍᴇ - {}"""
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>{file_caption}
+    CAPTION = """<code>{file_caption}</code>
 
-Size : {file_size}
+<b>Size : {file_size}
 
 Join : @CinemasMawa😏</b>""" 
 
